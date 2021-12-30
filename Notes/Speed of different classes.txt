@@ -1,0 +1,7 @@
+Array is faster than ArrayList
+
+BufferedReader(even along with parsing) is much faster than Scanner
+
+PrintWriter is faster than System.out.println
+
+Mapping in array is faster than HashMap, like for ex:- storing the index of the values of another array in a array as values with index as values
