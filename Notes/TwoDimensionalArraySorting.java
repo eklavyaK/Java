@@ -20,7 +20,6 @@ public class TwoDimensionalArraySorting
 		{
 			int n = Integer.parseInt(br.readLine());
 			int a[][] = new int[n][2];
-			int b[] = new int[n];
 			for(int i = 0;i<n;i++)
 			{
 				String input[] = br.readLine().split(" ");
