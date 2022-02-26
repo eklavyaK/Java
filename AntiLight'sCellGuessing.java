@@ -1,4 +1,4 @@
-import java.io.BufferedReader;
+public import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.lang.Math;
@@ -21,33 +21,14 @@ public class testfile
 		while(t-->0)
 		{
 			String s[] = br.readLine().split(" ");
-			long x = Long.parseLong(s[0]);
-			long n = Long.parseLong(s[1]);
-			if(x%2==0){
-				if(n%4==1){
-					out.println(x-n);
-				}
-				else if(n%4==2){
-					out.println(x+1);
-				}
-				else if(n%4==3){
-					out.println(x+n+1);
-				}
-				else out.println(x);
-			}
-			else{
-				if(n%4==1){
-					out.println(x+n);
-				}
-				else if(n%4==2){
-					out.println(x-1);
-				}
-				else if(n%4==3){
-					out.println(x-n-1);
-				}
-				else out.println(x);
-			}
+			int a = Integer.parseInt(s[0]);
+			int b = Integer.parseInt(s[1]);
+			if(a==1&&b==1)out.println(0);
+			else if(a==1||b==1)out.println(1);
+			else out.println(2);
 		}
 		out.close();
 	}
+}class AntiLight'sCellGuessing {
+    
 }
