@@ -1,10 +1,10 @@
 import java.util.*;
-class Box
+class OverridingToString
 {
 	int length;
 	int width;
 	int height;
-	Box(int a, int b ,int c)
+	OverridingToString(int a, int b ,int c)
 	{
 		length = a;
 		width = b;
@@ -18,7 +18,7 @@ class Box
 	{
 		Scanner sc = new Scanner(System.in);
 		String s[] = sc.nextLine().split(" ");
-		Box b = new Box(Integer.parseInt(s[0]),Integer.parseInt(s[1]),Integer.parseInt(s[2]));
+		OverridingToString b = new OverridingToString(Integer.parseInt(s[0]),Integer.parseInt(s[1]),Integer.parseInt(s[2]));
 		System.out.println(b);
 	}
 }

@@ -11,7 +11,7 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class OddGrasshopper
+public class MakeItDivisibleBy25
 {
 	public static void main(String args[]) throws java.io.IOException
 	{
@@ -20,33 +20,24 @@ public class OddGrasshopper
 		int t = Integer.parseInt(br.readLine());
 		while(t-->0)
 		{
-			String s[] = br.readLine().split(" ");
-			long x = Long.parseLong(s[0]);
-			long n = Long.parseLong(s[1]);
-			if(x%2==0){
-				if(n%4==1){
-					out.println(x-n);
+			String s = br.readLine();
+			int zero = -1, five = -1;
+			int countzero = 0, countfive = 0;
+			for(int i = s.length()-1;i>=0; i--){
+				if(s.charAt(i)=='0'||(zero==0 && s.charAt(i)=='5')) zero++;
+				else if(zero < 1){
+					countzero++;
 				}
-				else if(n%4==2){
-					out.println(x+1);
-				}
-				else if(n%4==3){
-					out.println(x+n+1);
-				}
-				else out.println(x);
+				else break;
 			}
-			else{
-				if(n%4==1){
-					out.println(x+n);
+			for(int i = s.length()-1;i>=0; i--){
+				if((five==-1 && s.charAt(i)=='5')||(five==0 && (s.charAt(i)=='7'||s.charAt(i)=='2'))) five++;
+				else if(five < 1){
+					countfive++;
 				}
-				else if(n%4==2){
-					out.println(x-1);
-				}
-				else if(n%4==3){
-					out.println(x-n-1);
-				}
-				else out.println(x);
+				else break;
 			}
+			out.println(five>0?Math.min(countzero,countfive):countzero);
 		}
 		out.close();
 	}

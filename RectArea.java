@@ -1,28 +1,28 @@
 import java.util.*;
-public class Rectangle
+public class RectArea
 {
 	double length;
 	double width;
 	public static void main(String args[])
 	{
-		Scanner sc = new scanner(System.in);
-		Rectangle r1 = new Rectangle();
-		Rectangle r2 = new Rectangle(sc.nextInt());
-		Rectangle r3 = new Rectangle(sc.nextDouble(),sc.nextDouble());
+		Scanner sc = new Scanner(System.in);
+		RectArea r1 = new RectArea();
+		RectArea r2 = new RectArea(sc.nextInt());
+		RectArea r3 = new RectArea(sc.nextDouble(),sc.nextDouble());
 		r2.calculate();
 		r3.calculate();
 	}
-	Rectangle()
+	RectArea()
 	{
 		width = 0;
 		length = 0;
 	}
-	Rectangle(int a)
+	RectArea(int a)
 	{
 		width = a;
 		length = a;
 	}
-	Rectangle(double x, double y)
+	RectArea(double x, double y)
 	{
 		width = y;
 		length = x;

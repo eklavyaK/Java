@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
-public class divinearray
+public class DivineArray
 {
 	public static void main(String args[])
 	{

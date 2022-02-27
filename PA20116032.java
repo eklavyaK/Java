@@ -191,5 +191,7 @@ class PA20116032
 		FileWriter writer = new FileWriter("20116032_TLBAccessesFile3_PageTableFile3_MRUorLRU_TLBsize.txt");
 		writer.write(str);
 		writer.close();
+		file1.close();
+		file2.close();
 	}
 } 

@@ -33,3 +33,4 @@ public class ForbiddenSubsequences
         Arrays.sort(tempArray);
         return new String(tempArray);
     }
+}

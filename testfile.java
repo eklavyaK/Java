@@ -21,32 +21,7 @@ public class testfile
 		while(t-->0)
 		{
 			String s[] = br.readLine().split(" ");
-			long x = Long.parseLong(s[0]);
-			long n = Long.parseLong(s[1]);
-			if(x%2==0){
-				if(n%4==1){
-					out.println(x-n);
-				}
-				else if(n%4==2){
-					out.println(x+1);
-				}
-				else if(n%4==3){
-					out.println(x+n+1);
-				}
-				else out.println(x);
-			}
-			else{
-				if(n%4==1){
-					out.println(x+n);
-				}
-				else if(n%4==2){
-					out.println(x-1);
-				}
-				else if(n%4==3){
-					out.println(x-n-1);
-				}
-				else out.println(x);
-			}
+			
 		}
 		out.close();
 	}

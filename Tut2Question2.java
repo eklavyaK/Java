@@ -1,5 +1,5 @@
 import java.util.*;
-public class Tutorial
+public class Tut2Question2
 {
     static class Node
     {

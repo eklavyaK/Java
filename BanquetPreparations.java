@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class testfile
+public class BanquetPreparations
 {
 	public static void main(String args[])
 	{

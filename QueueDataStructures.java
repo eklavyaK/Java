@@ -40,7 +40,7 @@ class queue
 		System.out.println();
 	}
 }
-public class QueueDataStructure
+public class QueueDataStructures
 {
 	public static void main(String args[])
 	{

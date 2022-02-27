@@ -11,6 +11,7 @@ public class Rectangle
 		Rectangle r3 = new Rectangle(sc.nextDouble(),sc.nextDouble());
 		r2.calculate();
 		r3.calculate();
+		sc.close();
 	}
 	Rectangle()
 	{

@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.lang.Math;
 import java.util.HashMap;
-public class testfile
+public class TrashFile1
 {
 	public static void main(String args[]) throws IOException
 	{

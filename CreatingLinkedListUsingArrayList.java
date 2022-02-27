@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class TransversingLinkedList
+public class CreatingLinkedListUsingArrayList
 {
     static class Node
     {
