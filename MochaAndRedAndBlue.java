@@ -11,7 +11,7 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class testfile
+public class MochaAndRedAndBlue
 {
 	public static void main(String args[]) throws java.io.IOException
 	{
