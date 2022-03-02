@@ -11,7 +11,7 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class testfile
+public class MIN_MEX_Cut
 {
 	public static void main(String args[]) throws java.io.IOException
 	{
@@ -20,9 +20,13 @@ public class testfile
 		int tc = Integer.parseInt(br.readLine());
 		while(tc-->0)
 		{
-			int n = Integer.parseInt(br.readLine());
-			String s[] = br.readLine().split(" ");
-			
+			String s = br.readLine();
+			boolean zero = true; int count = 0;
+			for(int i = 0; i<s.length(); i++){
+				if(zero && s.charAt(i)=='0') {count++;if(count==2) break;zero=!zero;}
+				else if(!zero && s.charAt(i)=='1') zero = true;
+			}
+			out.println(count);
 		}
 		out.close();
 	}

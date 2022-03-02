@@ -11,18 +11,18 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class testfile
+public class MedianMaximization
 {
 	public static void main(String args[]) throws java.io.IOException
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		PrintWriter out = new PrintWriter(System.out);
 		int tc = Integer.parseInt(br.readLine());
-		while(tc-->0)
-		{
-			int n = Integer.parseInt(br.readLine());
+		while(tc-->0){
 			String s[] = br.readLine().split(" ");
-			
+			int n = Integer.parseInt(s[0]);
+			int k = Integer.parseInt(s[1]);
+			out.println(k/(n/2+1));
 		}
 		out.close();
 	}
