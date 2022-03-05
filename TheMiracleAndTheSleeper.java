@@ -11,7 +11,7 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class testfile
+public class TheMiracleAndTheSleeper
 {
 	public static void main(String args[]) throws java.io.IOException
 	{
@@ -20,10 +20,11 @@ public class testfile
 		int tc = Integer.parseInt(br.readLine());
 		while(tc-->0)
 		{
-			int n = Integer.parseInt(br.readLine());
-			int k = 0;
-			for(int i = 0; i<n;) {k++;String s = k+"";if(k%3!=0 && k%10!=3) i++;}
-			out.println(k);
+			String s[] = br.readLine().split(" ");
+			int l = Integer.parseInt(s[0]);
+			int r = Integer.parseInt(s[1]);
+			if(l==r) out.println(0);
+			else out.println(Math.min(r-l,r%2==1?r/2:r/2-1));
 		}
 		out.close();
 	}

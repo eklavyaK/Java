@@ -11,7 +11,7 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class testfile
+public class InfinityTable
 {
 	public static void main(String args[]) throws java.io.IOException
 	{
@@ -21,9 +21,17 @@ public class testfile
 		while(tc-->0)
 		{
 			int n = Integer.parseInt(br.readLine());
-			int k = 0;
-			for(int i = 0; i<n;) {k++;String s = k+"";if(k%3!=0 && k%10!=3) i++;}
-			out.println(k);
+			double r = Math.sqrt(n);
+			int t = (int)r;
+			if(r==t){
+				out.println(t+" "+1);
+			}
+			else{
+				if(Math.pow(t,2)+t<n){
+					out.println((t+1)+" "+((int)Math.pow(t+1,2)-n+1));
+				}
+				else out.println((n-(int)Math.pow(t,2))+" "+(t+1));
+			}
 		}
 		out.close();
 	}
